@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+
+/**
+ * Setup
+ */
+@import "vars";
+@import "../bower_components/inuit.css/inuit";
+
+/**
+ * She’s all yours, cap’n... Begin importing your stuff here.
+ */
+
+//@import "ui/example";
+
+/**
+ * Delete this
+ */
+body{
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+ 	background-color: $light-blue;
+ 	color: $purple;
+ 	@extend .text--center;
+ 	@media screen and (max-width: $lap-start) {
+		padding: 20px;
+ 	}
+}
+
+.intro{
+	margin-top: 20%;
+}
+
+.light-heading{
+	font-weight: 100;
+}
+
+.external-link{
+	font-weight: bold;
+	color: $purple;
+}
